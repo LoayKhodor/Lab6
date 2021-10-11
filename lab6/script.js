@@ -46,3 +46,32 @@ function prnt(){
         document.getElementById("result2").innerHTML = arr.toString();
     
 }
+
+
+let array = new Array();
+array.push("john");
+array.push("jason");
+array.push("kevin");
+array.unshift("jad");
+console.log(array);
+
+let array2 = new Array();
+array2.push("manel");
+array2.push("nahla");
+array2.push("sabine");
+array2.push("mirna");
+console.log(array2);
+
+let array3 = array.concat(array2);
+console.log(array3);
+
+console.log(array3.indexOf("john"));
+console.log(array3.length);
+
+console.log(array3.pop());
+console.log(array3.shift());
+console.log(array3.reverse());
+let array4 = array3.slice(0,array3.indexOf("manel")+1);
+console.log(array4);
+console.log(array4.includes("sabine"));
+array3.forEach(element => console.log(element));
