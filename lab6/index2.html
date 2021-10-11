@@ -5,27 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <form>
-      <h1 id="header1">Welcome </h1>
-      <label for="a">a = </label>
-      <input type="number" name="a" id="a"/>
-      <br>
-      <label for="b">b = </label>
-      <input type="number" name="b" id="b"/>
-      <br>
-      <input type="button" id = "btn1" name="add" onclick="optn(this)" value="add"></input> <!--This to check for id if this=add-->
-      <input type = "button" id = "btn2" name="subtract" onclick="optn(this)" value="subtract"></input>
-      <input type = "button" id="btn3" name="multiply" onclick="optn(this)" value="multiply"></input>
-      <input type = "button" id="btn4" name = "divide" onclick="optn(this)" value="divide"></input>
-      <br>
-      <label for="par">result = </label>
-      <p id="result" name="par"></p>
-      <input type="button" id="print" name="result" onclick="prnt()" value="print array"></input>
-      <p id="result2" name="par"></p>
+    <div id = "main">
+      <form>
+      
+        <h1 id="header1">Welcome </h1>
+        <div id = "container">
+            <div id=inputs>
+                <label for="a">a = </label>
+                <input type="number" name="a" id="a"/>
+                <br>
+                <label for="b">b = </label>
+                <input type="number" name="b" id="b"/>
+                <br>
+            </div>
+
+            <div id = "buttons">
+          <input type="button" id = "btn1" name="add" onclick="optn(this)" value="add"></input> <!--This to check for id if this=add-->
+          <input type = "button" id = "btn2" name="subtract" onclick="optn(this)" value="subtract"></input>
+          <input type = "button" id="btn3" name="multiply" onclick="optn(this)" value="multiply"></input>
+          <input type = "button" id="btn4" name = "divide" onclick="optn(this)" value="divide"></input>
+          <br>
+        </div>
+        <div id = results>
+          <label for="par">result = </label>
+          <p id="result" name="par"></p>
+          <input type="button" id="print" name="result" onclick="prnt()" value="print array"></input>
+          <p id="result2" name="par"></p>
+        </div>
+      </div>
+     
     </form>
-    
+  </div>
   </body>
   <script src = "script2.js"></script>
 </html>

@@ -2,15 +2,15 @@ let input_a = document.getElementById("a");
 let input_b = document.getElementById("b");
 let h = document.getElementById("header1");
 const arr = new Array();
-//  var user = prompt("Please enter your last name");
-//  var user2;
-// if(user != null){
-//     user2 = prompt("Please enter your first name")
-// }
-// else{
-//     user = prompt("Please enter your last name");
-// }
-// h.innerHTML += user2.toUpperCase() +" "+ user.toUpperCase();
+ var user = prompt("Please enter your first name");
+ var user2;
+if(user != null){
+    user2 = prompt("Please enter your last name")
+}
+else{
+    user = prompt("Please enter your first name");
+}
+h.innerHTML += user.toUpperCase() +" "+ user2.toUpperCase();
 
 
 function addition(){
